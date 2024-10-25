@@ -1,0 +1,35 @@
+{
+	"dependencies": {
+		"@discordjs/opus": "^0.9.0",
+		"@discordjs/voice": "^0.17.0",
+		"@distube/yt-dlp": "^2.0.1",
+		"axios": "^1.7.7",
+		"discord.js": "^14.16.3",
+		"distube": "^5.0.2",
+		"dotenv": "^16.4.5",
+		"fillonit-bot": "file:",
+		"jobseekerbot": "file:",
+		"libsodium-wrappers": "^0.7.15",
+		"sodium-native": "^4.2.1",
+		"youtube-search-api": "^1.2.2",
+		"ytdl-core": "^4.11.5",
+		"ytdl-core-discord": "^1.3.1"
+	},
+	"name": "fillonit-bot",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node .",
+		"dev": "node --watch index.js",
+		"commands:deploy": "node deploy-commands.js",
+		"commands:delete": "node delete-commands.js"
+	},
+	"keywords": [],
+	"author": "Fillonit Ibishi",
+	"license": "MIT",
+	"description": "",
+	"devDependencies": {
+		"eslint": "^9.12.0"
+	}
+}

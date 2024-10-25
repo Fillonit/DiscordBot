@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+    discord-bot:
+        image: node:21
+        container_name: discord-bot
+        working_dir: /usr/src/app
+        volumes:
+            - .:/usr/src/app
+        command: npm run start
+        environment:
+            - NODE_ENV=production
+            - TOKEN=${TOKEN}
+            - CLIENT_ID=${CLIENT_ID}
+            - GUILD_ID=${GUILD_ID}
+        env_file:
+            - .env
+        ports:
+            - "3000:3000"
+        restart: unless-stopped
